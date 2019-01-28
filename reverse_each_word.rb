@@ -1,7 +1,5 @@
 def reverse_each_word (sentence)
-  sentence_ary = sentence.split(/ /)
-  reversed_sentence_ary = sentence_ary.collect {|word| word = word.reverse}
-  reversed_sentence_ary.join(" ")
+  sentence.split(/ /).collect {|word| word = word.reverse}.join(" ")
   
   #sentence_ary = sentence.split(/ /)
   #updated_sentence = []
